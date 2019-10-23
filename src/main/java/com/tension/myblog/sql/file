@@ -1,0 +1,33 @@
+PageInfo{
+    pageNum=1,
+    pageSize=3,
+    size=3,
+    startRow=1,
+    endRow=3,
+    total=6,
+    pages=2,
+    list=Page{
+        count=true,
+        pageNum=1,
+        pageSize=3,
+        startRow=0,
+        endRow=3,
+        total=6,
+        pages=2,
+        reasonable=true,
+        pageSizeZero=false
+    }
+    [Type{id=1, name='java', blogs=[]},
+     Type{id=2, name='嵌入式', blogs=[]},
+     Type{id=3, name='mysql', blogs=[]}],
+    prePage=0,
+    nextPage=2,
+    isFirstPage=true,
+    isLastPage=false,
+    hasPreviousPage=false,
+    hasNextPage=true,
+    navigatePages=8,
+    navigateFirstPage=1,
+    navigateLastPage=2,
+    navigatepageNums=[1, 2]
+    }

@@ -1,0 +1,18 @@
+spring:
+
+
+  datasource:
+    #8以上版本
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=GMT%2B8
+    username: root
+    password: 123456zts
+#日志级别
+logging:
+#  level:
+#    root: warn
+#    com.tension.mblog: info
+  file: log/blog-pro.log
+
+server:
+  port: 8080

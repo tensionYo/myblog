@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tension.myblog.entityMapper.BlogMapper">
+  <resultMap id="BaseResultMap" type="com.tension.myblog.entity.Blog">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="firstPicture" jdbcType="VARCHAR" property="firstpicture" />
+    <result column="flag" jdbcType="VARCHAR" property="flag" />
+    <result column="views" jdbcType="INTEGER" property="views" />
+    <result column="appreciation" jdbcType="BIT" property="appreciation" />
+    <result column="shareStatement" jdbcType="BIT" property="sharestatement" />
+    <result column="commentables" jdbcType="BIT" property="commentables" />
+    <result column="published" jdbcType="BIT" property="published" />
+    <result column="recomend" jdbcType="BIT" property="recomend" />
+    <result column="createTime" jdbcType="DATE" property="createtime" />
+    <result column="updateTime" jdbcType="DATE" property="updatetime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title, content, firstPicture, flag, views, appreciation, shareStatement, commentables, 
+    published, recomend, createTime, updateTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_blog
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_blog
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.tension.myblog.entity.Blog">
+    insert into t_blog (id, title, content, 
+      firstPicture, flag, views, 
+      appreciation, shareStatement, commentables, 
+      published, recomend, createTime, 
+      updateTime)
+    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{firstpicture,jdbcType=VARCHAR}, #{flag,jdbcType=VARCHAR}, #{views,jdbcType=INTEGER}, 
+      #{appreciation,jdbcType=BIT}, #{sharestatement,jdbcType=BIT}, #{commentables,jdbcType=BIT}, 
+      #{published,jdbcType=BIT}, #{recomend,jdbcType=BIT}, #{createtime,jdbcType=DATE}, 
+      #{updatetime,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.tension.myblog.entity.Blog">
+    insert into t_blog
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="firstpicture != null">
+        firstPicture,
+      </if>
+      <if test="flag != null">
+        flag,
+      </if>
+      <if test="views != null">
+        views,
+      </if>
+      <if test="appreciation != null">
+        appreciation,
+      </if>
+      <if test="sharestatement != null">
+        shareStatement,
+      </if>
+      <if test="commentables != null">
+        commentables,
+      </if>
+      <if test="published != null">
+        published,
+      </if>
+      <if test="recomend != null">
+        recomend,
+      </if>
+      <if test="createtime != null">
+        createTime,
+      </if>
+      <if test="updatetime != null">
+        updateTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="firstpicture != null">
+        #{firstpicture,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=VARCHAR},
+      </if>
+      <if test="views != null">
+        #{views,jdbcType=INTEGER},
+      </if>
+      <if test="appreciation != null">
+        #{appreciation,jdbcType=BIT},
+      </if>
+      <if test="sharestatement != null">
+        #{sharestatement,jdbcType=BIT},
+      </if>
+      <if test="commentables != null">
+        #{commentables,jdbcType=BIT},
+      </if>
+      <if test="published != null">
+        #{published,jdbcType=BIT},
+      </if>
+      <if test="recomend != null">
+        #{recomend,jdbcType=BIT},
+      </if>
+      <if test="createtime != null">
+        #{createtime,jdbcType=DATE},
+      </if>
+      <if test="updatetime != null">
+        #{updatetime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.tension.myblog.entity.Blog">
+    update t_blog
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="firstpicture != null">
+        firstPicture = #{firstpicture,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        flag = #{flag,jdbcType=VARCHAR},
+      </if>
+      <if test="views != null">
+        views = #{views,jdbcType=INTEGER},
+      </if>
+      <if test="appreciation != null">
+        appreciation = #{appreciation,jdbcType=BIT},
+      </if>
+      <if test="sharestatement != null">
+        shareStatement = #{sharestatement,jdbcType=BIT},
+      </if>
+      <if test="commentables != null">
+        commentables = #{commentables,jdbcType=BIT},
+      </if>
+      <if test="published != null">
+        published = #{published,jdbcType=BIT},
+      </if>
+      <if test="recomend != null">
+        recomend = #{recomend,jdbcType=BIT},
+      </if>
+      <if test="createtime != null">
+        createTime = #{createtime,jdbcType=DATE},
+      </if>
+      <if test="updatetime != null">
+        updateTime = #{updatetime,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.tension.myblog.entity.Blog">
+    update t_blog
+    set title = #{title,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      firstPicture = #{firstpicture,jdbcType=VARCHAR},
+      flag = #{flag,jdbcType=VARCHAR},
+      views = #{views,jdbcType=INTEGER},
+      appreciation = #{appreciation,jdbcType=BIT},
+      shareStatement = #{sharestatement,jdbcType=BIT},
+      commentables = #{commentables,jdbcType=BIT},
+      published = #{published,jdbcType=BIT},
+      recomend = #{recomend,jdbcType=BIT},
+      createTime = #{createtime,jdbcType=DATE},
+      updateTime = #{updatetime,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

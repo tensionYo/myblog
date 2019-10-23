@@ -1,0 +1,140 @@
+2019-10-21 11:11:23.660  INFO 7176 --- [main] com.tension.myblog.MyblogApplication     : Starting MyblogApplication on DESKTOP-4DDBUKG with PID 7176 (started by hasee in F:\javatest\springboot\myprojet\blog资料和项目\newblog\myblog)
+2019-10-21 11:11:23.660  INFO 7176 --- [main] com.tension.myblog.MyblogApplication     : The following profiles are active: pro
+2019-10-21 11:11:26.784  INFO 7176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 11:11:26.869  INFO 7176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 11:11:26.869  INFO 7176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 11:11:26.885  INFO 7176 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-21 11:11:26.885  INFO 7176 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-10-21 11:11:26.885  INFO 7176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-21 11:11:26.885  INFO 7176 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-21 11:11:27.037  INFO 7176 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-21 11:11:27.138  INFO 7176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 11:11:27.138  INFO 7176 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3130 ms
+2019-10-21 11:11:29.161  INFO 7176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 11:11:29.171  INFO 7176 --- [main] com.tension.myblog.MyblogApplication     : Started MyblogApplication in 6.728 seconds (JVM running for 8.222)
+2019-10-21 11:12:00.423  INFO 7176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 11:12:00.424  INFO 7176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 11:12:00.441  INFO 7176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-10-21 11:12:00.470  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin', ip='null', classMethod='com.tension.myblog.controller.LoginController.loginPage', args=[]}
+2019-10-21 11:12:00.485  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:12:00.486  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : result:admin/login
+2019-10-21 11:12:32.294  WARN 7176 --- [http-nio-8080-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [233] milliseconds.
+2019-10-21 11:12:32.294  WARN 7176 --- [http-nio-8080-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [233] milliseconds.
+2019-10-21 11:12:32.297  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/login', ip='null', classMethod='com.tension.myblog.controller.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@123a99fd, {}]}
+2019-10-21 11:12:32.297  INFO 7176 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/login', ip='null', classMethod='com.tension.myblog.controller.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@2b8ec73f, {}]}
+2019-10-21 11:12:32.354  INFO 7176 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 11:12:34.446  INFO 7176 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 11:12:35.001  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:12:35.001  INFO 7176 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:12:35.001  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : result:/admin/index
+2019-10-21 11:12:35.001  INFO 7176 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : result:/admin/index
+2019-10-21 11:12:58.995  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags;jsessionid=BD1A9D99F03C361ED2BFF0D490D124F6', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {}]}
+2019-10-21 11:12:59.235  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:12:59.236  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:13:24.029  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags/input', ip='null', classMethod='com.tension.myblog.controller.TagController.input', args=[{}]}
+2019-10-21 11:13:24.029  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:13:24.029  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : result:/admin/tags-input
+2019-10-21 11:14:00.412  INFO 7176 --- [http-nio-8080-exec-6] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.post', args=[Tag{id=null, name='分类1', blogs=[]}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2019-10-21 11:14:00.932  INFO 7176 --- [http-nio-8080-exec-6] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:14:00.932  INFO 7176 --- [http-nio-8080-exec-6] com.tension.myblog.aspect.LogAspect      : result:redirect:/admin/tags
+2019-10-21 11:14:01.151  INFO 7176 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {message=新增成功}]}
+2019-10-21 11:14:01.176  INFO 7176 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:14:01.176  INFO 7176 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:14:34.685  INFO 7176 --- [http-nio-8080-exec-5] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags/input', ip='null', classMethod='com.tension.myblog.controller.TagController.input', args=[{}]}
+2019-10-21 11:14:34.686  INFO 7176 --- [http-nio-8080-exec-5] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:14:34.686  INFO 7176 --- [http-nio-8080-exec-5] com.tension.myblog.aspect.LogAspect      : result:/admin/tags-input
+2019-10-21 11:15:01.469  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.post', args=[Tag{id=null, name='分类2', blogs=[]}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2019-10-21 11:15:01.874  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:15:01.875  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : result:redirect:/admin/tags
+2019-10-21 11:15:02.016  INFO 7176 --- [http-nio-8080-exec-7] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {message=新增成功}]}
+2019-10-21 11:15:02.022  INFO 7176 --- [http-nio-8080-exec-7] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:15:02.023  INFO 7176 --- [http-nio-8080-exec-7] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:17:02.286  INFO 7176 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {}]}
+2019-10-21 11:17:02.294  INFO 7176 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:17:02.295  INFO 7176 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:17:27.306  INFO 7176 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/types', ip='null', classMethod='com.tension.myblog.controller.TypeController.types', args=[2, 4, {}]}
+2019-10-21 11:17:27.416  INFO 7176 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:17:27.417  INFO 7176 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:19:37.315  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {}]}
+2019-10-21 11:19:37.324  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:19:37.324  INFO 7176 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:20:04.640  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/types', ip='null', classMethod='com.tension.myblog.controller.TypeController.types', args=[2, 4, {}]}
+2019-10-21 11:20:04.649  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:20:04.649  INFO 7176 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:21:23.409  INFO 7176 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/types', ip='null', classMethod='com.tension.myblog.controller.TypeController.types', args=[2, 4, {}]}
+2019-10-21 11:21:23.416  INFO 7176 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:21:23.417  INFO 7176 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:21:40.595  INFO 2024 --- [main] com.tension.myblog.MyblogApplication     : Starting MyblogApplication on DESKTOP-4DDBUKG with PID 2024 (started by hasee in F:\javatest\springboot\myprojet\blog资料和项目\newblog\myblog)
+2019-10-21 11:21:40.598  INFO 2024 --- [main] com.tension.myblog.MyblogApplication     : The following profiles are active: pro
+2019-10-21 11:21:41.893  INFO 2024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 11:21:41.909  INFO 2024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 11:21:41.909  INFO 2024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 11:21:41.925  INFO 2024 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-21 11:21:41.925  INFO 2024 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-10-21 11:21:41.925  INFO 2024 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-21 11:21:41.925  INFO 2024 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-21 11:21:41.925  INFO 2024 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-21 11:21:41.994  INFO 2024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 11:21:41.994  INFO 2024 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1346 ms
+2019-10-21 11:21:42.749  INFO 2024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 11:21:42.749  INFO 2024 --- [main] com.tension.myblog.MyblogApplication     : Started MyblogApplication in 2.585 seconds (JVM running for 3.762)
+2019-10-21 11:21:45.752  INFO 2024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 11:21:45.753  INFO 2024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 11:21:45.763  INFO 2024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-21 11:21:45.998  WARN 2024 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [225] milliseconds.
+2019-10-21 11:21:46.014  INFO 2024 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin', ip='null', classMethod='com.tension.myblog.controller.LoginController.loginPage', args=[]}
+2019-10-21 11:21:46.018  INFO 2024 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:21:46.019  INFO 2024 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : result:admin/login
+2019-10-21 11:22:35.151  INFO 2024 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/login', ip='null', classMethod='com.tension.myblog.controller.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@30ae688d, {}]}
+2019-10-21 11:22:35.173  INFO 2024 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 11:22:35.388  INFO 2024 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 11:22:35.417  INFO 2024 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:22:35.417  INFO 2024 --- [http-nio-8080-exec-9] com.tension.myblog.aspect.LogAspect      : result:/admin/index
+2019-10-21 11:22:57.056  INFO 2024 --- [http-nio-8080-exec-4] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {}]}
+2019-10-21 11:22:57.102  INFO 2024 --- [http-nio-8080-exec-4] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:22:57.102  INFO 2024 --- [http-nio-8080-exec-4] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:23:43.256  INFO 2024 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[2, 4, {}]}
+2019-10-21 11:23:43.264  INFO 2024 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:23:43.264  INFO 2024 --- [http-nio-8080-exec-3] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:24:18.143  INFO 2024 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {}]}
+2019-10-21 11:24:18.151  INFO 2024 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:24:18.151  INFO 2024 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 11:24:47.587  INFO 2024 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags/4/delete', ip='null', classMethod='com.tension.myblog.controller.TagController.delete', args=[4, {}]}
+2019-10-21 11:24:47.723  INFO 2024 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:24:47.724  INFO 2024 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : result:redirect:/admin/tags
+2019-10-21 11:24:47.890  INFO 2024 --- [http-nio-8080-exec-6] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/tags', ip='null', classMethod='com.tension.myblog.controller.TagController.tags', args=[1, 4, {message=删除成功}]}
+2019-10-21 11:24:47.896  INFO 2024 --- [http-nio-8080-exec-6] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 11:24:47.896  INFO 2024 --- [http-nio-8080-exec-6] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 21:12:28.007  INFO 13592 --- [main] com.tension.myblog.MyblogApplication     : Starting MyblogApplication on DESKTOP-4DDBUKG with PID 13592 (started by hasee in F:\javatest\springboot\myprojet\blog资料和项目\newblog\myblog)
+2019-10-21 21:12:28.022  INFO 13592 --- [main] com.tension.myblog.MyblogApplication     : The following profiles are active: pro
+2019-10-21 21:12:31.662  INFO 13592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-10-21 21:12:31.771  INFO 13592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-21 21:12:31.771  INFO 13592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-21 21:12:31.787  INFO 13592 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-21 21:12:31.787  INFO 13592 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-10-21 21:12:31.787  INFO 13592 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-21 21:12:31.787  INFO 13592 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-21 21:12:31.912  INFO 13592 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-21 21:12:32.037  INFO 13592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-21 21:12:32.037  INFO 13592 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3765 ms
+2019-10-21 21:12:33.552  INFO 13592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-21 21:12:33.552  INFO 13592 --- [main] com.tension.myblog.MyblogApplication     : Started MyblogApplication in 6.998 seconds (JVM running for 8.559)
+2019-10-21 21:12:44.380  INFO 13592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-21 21:12:44.381  INFO 13592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-21 21:12:44.403  INFO 13592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2019-10-21 21:12:44.438  INFO 13592 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin', ip='null', classMethod='com.tension.myblog.controller.LoginController.loginPage', args=[]}
+2019-10-21 21:12:44.441  INFO 13592 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 21:12:44.442  INFO 13592 --- [http-nio-8080-exec-1] com.tension.myblog.aspect.LogAspect      : result:admin/login
+2019-10-21 21:13:24.713  WARN 13592 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [206] milliseconds.
+2019-10-21 21:13:24.715  INFO 13592 --- [http-nio-8080-exec-4] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/login', ip='null', classMethod='com.tension.myblog.controller.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@435d217f, {}]}
+2019-10-21 21:13:24.744  INFO 13592 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-21 21:13:25.180  INFO 13592 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-21 21:13:25.345  INFO 13592 --- [http-nio-8080-exec-4] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 21:13:25.346  INFO 13592 --- [http-nio-8080-exec-4] com.tension.myblog.aspect.LogAspect      : result:/admin/index
+2019-10-21 21:13:51.830  INFO 13592 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://localhost:8080/admin/types;jsessionid=5171281F2E450F95F4328ECC1732AF75', ip='null', classMethod='com.tension.myblog.controller.TypeController.types', args=[1, 4, {}]}
+2019-10-21 21:13:51.946  INFO 13592 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 21:13:51.946  INFO 13592 --- [http-nio-8080-exec-8] com.tension.myblog.aspect.LogAspect      : result:null
+2019-10-21 21:19:20.858  INFO 13592 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : request:RequestLog{url='http://10.128.192.120:8080/', ip='null', classMethod='com.tension.myblog.controller.IndexController.index', args=[]}
+2019-10-21 21:19:20.874  INFO 13592 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : ------------doafter-----------
+2019-10-21 21:19:20.874  INFO 13592 --- [http-nio-8080-exec-2] com.tension.myblog.aspect.LogAspect      : result:index
+2019-10-21 22:22:16.610  WARN 13592 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m50s686ms101µs400ns).
