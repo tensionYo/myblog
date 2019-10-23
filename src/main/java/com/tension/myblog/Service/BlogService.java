@@ -11,4 +11,5 @@ public interface BlogService {
     List<Blog> AllBlogs();
 
     Blog saveBlog();
+    //
 }
